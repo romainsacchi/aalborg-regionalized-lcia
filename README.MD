@@ -2,6 +2,10 @@
 
 **Aalborg, Denmark | 16-18 September 2026**
 
+![Aerial view of Aalborg and the Limfjord](_images/aalborg-aerial.jpg)
+
+*Photo by [Drlady](https://commons.wikimedia.org/wiki/File:Aalborg_from_above.jpg), via Wikimedia Commons, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized from the original.*
+
 ## Course Overview
 
 Welcome! This repository contains all material for the 3-day course:
@@ -143,7 +147,9 @@ See [INSTRUCTIONS.MD](INSTRUCTIONS.MD) for the exact commands.
 
 ## Teaching Staff
 
-- Instructor: [Romain Sacchi](mailto:romain.sacchi@psi.ch), Paul Scherrer Institute (PSI)
+- Instructors:
+  - [Romain Sacchi](mailto:romain.sacchi@psi.ch), Paul Scherrer Institute (PSI)
+  - Karin Treyer, Paul Scherrer Institute (PSI)
 - Location: Aalborg, Denmark
 - Dates: Wednesday 16 September, 09:00 to Friday 18 September 2026, 18:00
 - Format: lectures + hands-on workshops (24 hours)
