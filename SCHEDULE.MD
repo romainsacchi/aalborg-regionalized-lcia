@@ -160,5 +160,5 @@ Inventory flow assessment II
 Coffee break
 
 ### 15:30 - 18:00
-Capstone group work, dual case study, and wrap-up
+Group work, case study, and wrap-up
 - [D3-06 Capstone dual case study](tutorials/DAY%203/D3-06%20Capstone%20dual%20case%20study.ipynb)

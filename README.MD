@@ -4,7 +4,7 @@
 
 ![Aerial view of Aalborg and the Limfjord](_images/aalborg-aerial.jpg)
 
-*Photo by [Drlady](https://commons.wikimedia.org/wiki/File:Aalborg_from_above.jpg), via Wikimedia Commons, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized from the original.*
+*Photo by [Drlady](https://commons.wikimedia.org/wiki/File:Aalborg_from_above.jpg), via Wikimedia Commons, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
 
 ## Course Overview
 
@@ -149,7 +149,7 @@ See [INSTRUCTIONS.MD](INSTRUCTIONS.MD) for the exact commands.
 
 - Instructors:
   - [Romain Sacchi](mailto:romain.sacchi@psi.ch), Paul Scherrer Institute (PSI)
-  - Karin Treyer, Paul Scherrer Institute (PSI)
+  - [Karin Treyer](mailto:karin.treyer@psi.ch), Paul Scherrer Institute (PSI)
 - Location: Aalborg, Denmark
 - Dates: Wednesday 16 to Friday 18 September 2026
 - Daily schedule: 09:00 start; planned finish at 18:15 on Days 1-2 and 18:00 on Day 3
