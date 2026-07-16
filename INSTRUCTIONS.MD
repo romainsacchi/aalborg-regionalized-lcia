@@ -6,6 +6,8 @@ The goal is to spend Day 1 learning, not debugging installations.
 If you get stuck, contact:
 `romain.sacchi@psi.ch`
 
+First use the symptom-based [TROUBLESHOOTING.md](TROUBLESHOOTING.md) guide. If the problem remains, include the diagnostic information listed there when you contact an instructor.
+
 ## Minimum hardware
 
 - Minimum: `8 GB` RAM
@@ -328,6 +330,8 @@ Then open and run all cells in:
 
 - `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`
 
+The final section runs a tiny LCA in an isolated Brightway project. It does not modify the BAFU course project. After the first successful run, change the requested electricity input from `2.0` to `3.0`, rerun the model cells, and confirm that the score changes from `1.0` to `1.5 kg CO2-eq`.
+
 Keep the same `bw` environment for the full course.
 Day 2 and Day 3 assume that the Brightway project created on Day 1 is still available.
 
@@ -336,6 +340,8 @@ Day 2 and Day 3 assume that the Brightway project created on Day 1 is still avai
 Please complete:
 - [READING_MATERIAL.md](READING_MATERIAL.md)
 - [tutorials/00_SETUP/00 - Setup and First Checks.ipynb](tutorials/00_SETUP/00%20-%20Setup%20and%20First%20Checks.ipynb)
+
+Your readiness check is complete when the notebook prints `READINESS CHECK: PASS` and you have successfully changed the model input and obtained the predicted new score.
 
 Keep the same `bw` environment for the full course.
 Day 1 creates the Brightway project state used later in Day 2 and Day 3, so do not delete or recreate it unless an instructor asks you to.

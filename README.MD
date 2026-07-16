@@ -25,6 +25,7 @@ All material remains available after the course.
 ## Quick Links
 
 - [INSTRUCTIONS.MD](INSTRUCTIONS.MD): pre-arrival setup and installation steps
+- [TROUBLESHOOTING.md](TROUBLESHOOTING.md): symptom-based help for setup, kernels, files, and calculations
 - [SCHEDULE.MD](SCHEDULE.MD): day-by-day agenda with notebook mapping
 - [READING_MATERIAL.md](READING_MATERIAL.md): recommended pre-course reading
 - [HOME_ASSIGNMENT.md](HOME_ASSIGNMENT.md): optional post-course assignment
@@ -108,7 +109,7 @@ Participants should work through the repository in this order:
 Before the course starts:
 1. Follow [INSTRUCTIONS.MD](INSTRUCTIONS.MD).
 2. Create and activate the `bw` environment. Use the Miniforge/conda route by default; use the venv/pip route only if your institution does not allow Anaconda, conda, or Miniforge.
-3. Run `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`.
+3. Run `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`, complete its mini LCA, and change the requested model input.
 
 During the course:
 4. Complete Day 1, then Day 2, then Day 3 in the order shown in [SCHEDULE.MD](SCHEDULE.MD).
@@ -118,6 +119,8 @@ During the course:
 
 Follow [INSTRUCTIONS.MD](INSTRUCTIONS.MD) and complete:
 - `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`
+
+You are ready when the setup notebook prints `READINESS CHECK: PASS` and your edited electricity input changes the calculated score as predicted. If a check fails, use [TROUBLESHOOTING.md](TROUBLESHOOTING.md) before the course.
 
 If you are new to Python, spend a few hours on a beginner tutorial before arrival.
 We recommend the University of Helsinki online tutorial, which requires no installation:
