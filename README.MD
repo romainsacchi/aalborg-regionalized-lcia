@@ -26,6 +26,7 @@ All material remains available after the course.
 
 - [INSTRUCTIONS.MD](INSTRUCTIONS.MD): pre-arrival setup and installation steps
 - [SCHEDULE.MD](SCHEDULE.MD): day-by-day agenda with notebook mapping
+- [INSTRUCTOR_NOTES.md](INSTRUCTOR_NOTES.md): facilitation cadence and protected exercise guidance
 - [READING_MATERIAL.md](READING_MATERIAL.md): recommended pre-course reading
 - [HOME_ASSIGNMENT.md](HOME_ASSIGNMENT.md): optional post-course assignment
 

@@ -3,6 +3,7 @@
 The schedule below maps each time block to specific notebooks.
 Break durations and time can be adjusted during the course.
 Each day starts at 09:00. Lunch is planned from 12:30 to 13:45.
+Checkpoint and group-work periods are protected participant time: instructors should not reveal solutions before the scheduled debrief.
 
 ## PRIOR TO ARRIVAL
 
@@ -72,10 +73,18 @@ Uncertainty and Monte Carlo
 ### 15:45 - 16:15
 Coffee break
 
-### 16:15 - 18:15
-Data QA/linking workflow and contribution analysis
+### 16:15 - 17:30
+Guided data QA/linking workflow and contribution analysis
 - [D1-06 Data quality checks and linking workflow](tutorials/DAY%201/D1-06%20Data%20quality%20checks%20and%20linking%20workflow.ipynb)
 - [D1-07 Contribution analysis and result visualization](tutorials/DAY%201/D1-07%20Contribution%20analysis%20and%20result%20visualization.ipynb)
+
+### 17:30 - 18:00
+Independent checkpoint: complete the notebook tasks before opening the solution cells
+- [D1-06 Data quality checks and linking workflow](tutorials/DAY%201/D1-06%20Data%20quality%20checks%20and%20linking%20workflow.ipynb)
+- [D1-07 Contribution analysis and result visualization](tutorials/DAY%201/D1-07%20Contribution%20analysis%20and%20result%20visualization.ipynb)
+
+### 18:00 - 18:15
+Pair comparison and instructor debrief
 
 ### Optional Day 1 extensions, if time allows
 Advanced `brightway` import, uncertainty, and parameter workflows
@@ -118,9 +127,16 @@ Variability and uncertainty in regionalised LCIA
 ### 15:45 - 16:15
 Coffee break
 
-### 16:15 - 18:15
-Case study: regionalised hydrogen pathways
+### 16:15 - 17:00
+Guided case-study setup: regionalised hydrogen pathways
 - [D2-07 Case study - Regionalised hydrogen pathways](tutorials/DAY%202/D2-07%20Case%20study%20-%20Regionalised%20hydrogen%20pathways.ipynb)
+
+### 17:00 - 17:45
+Pair work: complete the pathway comparison and prepare an interpretation
+- [D2-07 Case study - Regionalised hydrogen pathways](tutorials/DAY%202/D2-07%20Case%20study%20-%20Regionalised%20hydrogen%20pathways.ipynb)
+
+### 17:45 - 18:15
+Case-study debrief and comparison between teams
 
 ## DAY 3 (Friday, September 18, 2026) - Scenario LCIA and Inventory Flow Assessment
 
@@ -159,6 +175,18 @@ Inventory flow assessment II
 ### 15:15 - 15:30
 Coffee break
 
-### 15:30 - 18:00
-Group work, case study, and wrap-up
+### 15:30 - 15:40
+Capstone briefing, case selection, and team roles
+- [D3-06 Capstone dual case study](tutorials/DAY%203/D3-06%20Capstone%20dual%20case%20study.ipynb)
+
+### 15:40 - 17:20
+Protected capstone group work
+- [D3-06 Capstone dual case study](tutorials/DAY%203/D3-06%20Capstone%20dual%20case%20study.ipynb)
+
+### 17:20 - 17:50
+Five-minute team reports and peer questions
+- [D3-06 Capstone dual case study](tutorials/DAY%203/D3-06%20Capstone%20dual%20case%20study.ipynb)
+
+### 17:50 - 18:00
+Course wrap-up and next steps
 - [D3-06 Capstone dual case study](tutorials/DAY%203/D3-06%20Capstone%20dual%20case%20study.ipynb)
