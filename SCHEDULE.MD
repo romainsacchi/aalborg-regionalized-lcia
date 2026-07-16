@@ -3,7 +3,7 @@
 The schedule below maps each time block to specific notebooks.
 Break durations and time can be adjusted during the course.
 Each day starts at 09:00. Lunch is planned from 12:30 to 13:45.
-Checkpoint and group-work periods are protected participant time: instructors should not reveal solutions before the scheduled debrief.
+Checkpoint and group-work periods are dedicated participant time: instructors should not reveal solutions before the scheduled debrief.
 
 ## PRIOR TO ARRIVAL
 
@@ -180,7 +180,7 @@ Capstone briefing, case selection, and team roles
 - [D3-06 Capstone dual case study](tutorials/DAY%203/D3-06%20Capstone%20dual%20case%20study.ipynb)
 
 ### 15:40 - 17:20
-Protected capstone group work
+Dedicated capstone group work
 - [D3-06 Capstone dual case study](tutorials/DAY%203/D3-06%20Capstone%20dual%20case%20study.ipynb)
 
 ### 17:20 - 17:50
