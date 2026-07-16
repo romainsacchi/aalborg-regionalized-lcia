@@ -2,6 +2,7 @@
 
 The schedule below maps each time block to specific notebooks.
 Break durations and time can be adjusted during the course.
+Each day starts at 09:00. Lunch is planned as a one-hour break so that the course can finish earlier in the evening.
 
 ## PRIOR TO ARRIVAL
 
@@ -57,17 +58,17 @@ Manual matrix LCA, `brightway` first LCA, BAFU:2025 import, and `ecoinvent` impo
 - [D1-03 Manual LCA with `numpy` matrices - Heijungs and Suh 2002 vs `brightway`](tutorials/DAY%201/D1-03%20Manual%20LCA%20with%20NumPy%20matrices%20-%20Heijungs%20and%20Suh%202002%20vs%20Brightway.ipynb)
 - [D1-04 First LCA from demand to score in `brightway`](tutorials/DAY%201/D1-04%20First%20LCA%20from%20demand%20to%20score%20in%20Brightway.ipynb)
 
-### 13:00 - 15:00
+### 13:00 - 14:00
 Lunch break
 
-### 15:00 - 16:30
+### 14:00 - 15:30
 Uncertainty and Monte Carlo
 - [D1-05 Uncertainty and Monte Carlo basics](tutorials/DAY%201/D1-05%20Uncertainty%20and%20Monte%20Carlo%20basics.ipynb)
 
-### 16:30 - 17:00
+### 15:30 - 16:00
 Coffee break
 
-### 17:00 - 19:00
+### 16:00 - 18:00
 Data QA/linking workflow and contribution analysis
 - [D1-06 Data quality checks and linking workflow](tutorials/DAY%201/D1-06%20Data%20quality%20checks%20and%20linking%20workflow.ipynb)
 - [D1-07 Contribution analysis and result visualization](tutorials/DAY%201/D1-07%20Contribution%20analysis%20and%20result%20visualization.ipynb)
@@ -99,17 +100,17 @@ Coffee break
 - [D2-04 Spatial matching and fallback logic](tutorials/DAY%202/D2-04%20Spatial%20matching%20and%20fallback%20logic.ipynb)
 - [D2-05 Regionalised methods across impact categories](tutorials/DAY%202/D2-05%20Regionalised%20methods%20across%20impact%20categories.ipynb)
 
-### 13:00 - 15:00
+### 13:00 - 14:00
 Lunch break
 
-### 15:00 - 16:30
+### 14:00 - 15:30
 Variability and uncertainty in regionalised LCIA
 - [D2-06 Variability and uncertainty in regionalised LCIA](tutorials/DAY%202/D2-06%20Variability%20and%20uncertainty%20in%20regionalised%20LCIA.ipynb)
 
-### 16:30 - 17:00
+### 15:30 - 16:00
 Coffee break
 
-### 17:00 - 19:00
+### 16:00 - 18:00
 Case study: regionalised hydrogen pathways
 - [D2-07 Case study - Regionalised hydrogen pathways](tutorials/DAY%202/D2-07%20Case%20study%20-%20Regionalised%20hydrogen%20pathways.ipynb)
 
@@ -136,16 +137,16 @@ Scenario-based LCIA with parameterised CFs
 Inventory flow assessment I
 - [D3-04 Inventory flow assessment I - tracing intermediates](tutorials/DAY%203/D3-04%20Inventory%20flow%20assessment%20I%20-%20tracing%20intermediates.ipynb)
 
-### 13:00 - 15:00
+### 13:00 - 14:00
 Lunch break
 
-### 15:00 - 16:00
+### 14:00 - 15:00
 Inventory flow assessment II
 - [D3-05 Inventory flow assessment II - criticality factors](tutorials/DAY%203/D3-05%20Inventory%20flow%20assessment%20II%20-%20criticality%20factors.ipynb)
 
-### 16:00 - 16:15
+### 15:00 - 15:15
 Coffee break
 
-### 16:15 - 18:00
+### 15:15 - 17:00
 Capstone dual case study and wrap-up
 - [D3-06 Capstone dual case study](tutorials/DAY%203/D3-06%20Capstone%20dual%20case%20study.ipynb)

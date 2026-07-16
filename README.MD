@@ -151,7 +151,8 @@ See [INSTRUCTIONS.MD](INSTRUCTIONS.MD) for the exact commands.
   - [Romain Sacchi](mailto:romain.sacchi@psi.ch), Paul Scherrer Institute (PSI)
   - Karin Treyer, Paul Scherrer Institute (PSI)
 - Location: Aalborg, Denmark
-- Dates: Wednesday 16 September, 09:00 to Friday 18 September 2026, 18:00
+- Dates: Wednesday 16 to Friday 18 September 2026
+- Daily schedule: 09:00 start; planned finish at 18:00 on Days 1-2 and 17:00 on Day 3
 - Format: lectures + hands-on workshops (24 hours)
 
 ## License
