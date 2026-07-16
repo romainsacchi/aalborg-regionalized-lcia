@@ -2,7 +2,7 @@
 
 The schedule below maps each time block to specific notebooks.
 Break durations and time can be adjusted during the course.
-Each day starts at 09:00. Lunch is planned as a one-hour break so that the course can finish earlier in the evening.
+Each day starts at 09:00. Lunch is planned from 12:30 to 13:30 so that the course can finish earlier in the evening.
 
 ## PRIOR TO ARRIVAL
 
@@ -53,13 +53,17 @@ Welcome, setup check, course roadmap
 ### 10:30 - 11:00
 Coffee break
 
-### 11:00 - 13:00
+### 11:00 - 12:30
 Manual matrix LCA, `brightway` first LCA, BAFU:2025 import, and `ecoinvent` import overview
 - [D1-03 Manual LCA with `numpy` matrices - Heijungs and Suh 2002 vs `brightway`](tutorials/DAY%201/D1-03%20Manual%20LCA%20with%20NumPy%20matrices%20-%20Heijungs%20and%20Suh%202002%20vs%20Brightway.ipynb)
 - [D1-04 First LCA from demand to score in `brightway`](tutorials/DAY%201/D1-04%20First%20LCA%20from%20demand%20to%20score%20in%20Brightway.ipynb)
 
-### 13:00 - 14:00
+### 12:30 - 13:30
 Lunch break
+
+### 13:30 - 14:00
+BAFU:2025 import and `ecoinvent` import overview, continued
+- [D1-04 First LCA from demand to score in `brightway`](tutorials/DAY%201/D1-04%20First%20LCA%20from%20demand%20to%20score%20in%20Brightway.ipynb)
 
 ### 14:00 - 15:30
 Uncertainty and Monte Carlo
@@ -94,14 +98,18 @@ Day 1 recap and environment checks
 ### 11:00 - 11:15
 Coffee break
 
-### 11:15 - 13:00
+### 11:15 - 12:30
 `edges` workflow, spatial matching, and regionalised methods
 - [D2-03 Introduction to `edges` workflow and API](tutorials/DAY%202/D2-03%20Introduction%20to%20edges%20workflow%20and%20API.ipynb)
 - [D2-04 Spatial matching and fallback logic](tutorials/DAY%202/D2-04%20Spatial%20matching%20and%20fallback%20logic.ipynb)
 - [D2-05 Regionalised methods across impact categories](tutorials/DAY%202/D2-05%20Regionalised%20methods%20across%20impact%20categories.ipynb)
 
-### 13:00 - 14:00
+### 12:30 - 13:30
 Lunch break
+
+### 13:30 - 14:00
+Regionalised methods across impact categories, continued
+- [D2-05 Regionalised methods across impact categories](tutorials/DAY%202/D2-05%20Regionalised%20methods%20across%20impact%20categories.ipynb)
 
 ### 14:00 - 15:30
 Variability and uncertainty in regionalised LCIA
@@ -133,12 +141,16 @@ Scenario-based LCIA with parameterised CFs
 - [D3-02 Parameterised characterization factors with edges](tutorials/DAY%203/D3-02%20Parameterised%20characterization%20factors%20with%20edges.ipynb)
 - [D3-03 Time and scenario integration workflow](tutorials/DAY%203/D3-03%20Time%20and%20scenario%20integration%20workflow.ipynb)
 
-### 12:15 - 13:00
+### 12:15 - 12:30
 Inventory flow assessment I
 - [D3-04 Inventory flow assessment I - tracing intermediates](tutorials/DAY%203/D3-04%20Inventory%20flow%20assessment%20I%20-%20tracing%20intermediates.ipynb)
 
-### 13:00 - 14:00
+### 12:30 - 13:30
 Lunch break
+
+### 13:30 - 14:00
+Inventory flow assessment I, continued
+- [D3-04 Inventory flow assessment I - tracing intermediates](tutorials/DAY%203/D3-04%20Inventory%20flow%20assessment%20I%20-%20tracing%20intermediates.ipynb)
 
 ### 14:00 - 15:00
 Inventory flow assessment II
