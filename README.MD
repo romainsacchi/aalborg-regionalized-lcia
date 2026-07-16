@@ -152,7 +152,7 @@ See [INSTRUCTIONS.MD](INSTRUCTIONS.MD) for the exact commands.
   - Karin Treyer, Paul Scherrer Institute (PSI)
 - Location: Aalborg, Denmark
 - Dates: Wednesday 16 to Friday 18 September 2026
-- Daily schedule: 09:00 start; planned finish at 18:15 on Days 1-2 and 17:15 on Day 3
+- Daily schedule: 09:00 start; planned finish at 18:15 on Days 1-2 and 18:00 on Day 3
 - Format: lectures + hands-on workshops (24 hours)
 
 ## License
