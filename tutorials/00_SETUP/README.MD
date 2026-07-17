@@ -1,6 +1,6 @@
 # Pre-course setup
 
-Run `00 - Setup and First Checks.ipynb` before Day 1. Complete the mini LCA at the end, then change its electricity input from `2.0` to `3.0` and confirm that the score moves from `1.0` to `1.5 kg CO2-eq`.
+Run `00 - Setup and First Checks.ipynb` before Day 1. Complete the mini LCA at the end.
 
 If you are completely new to Python, spend a few hours on a beginner tutorial before the course.
 We recommend the University of Helsinki's online tutorial, which requires no installation:

@@ -1,6 +1,8 @@
 # Troubleshooting Guide
 
-Use this guide when a setup command or notebook cell fails. Start with the first section that matches the symptom, make one change at a time, and rerun the smallest relevant check.
+Use this guide when a setup command or notebook cell fails. 
+Start with the first section that matches the symptom, make one change at a time, 
+and rerun the smallest relevant check.
 
 If you still need help, send the diagnostic information in [What to send the instructors](#what-to-send-the-instructors) instead of only sending a screenshot.
 
@@ -128,7 +130,7 @@ print("Databases:", list(bd.databases))
 
 For the live course notebooks, the project should be `aalborg-rlcia-2026` and `bafu` should be listed after completing the Day 1 import. Later notebooks depend on that state. Do not delete or recreate the project unless an instructor asks you to.
 
-## A Brightway or `edges` calculation fails
+## A `brightway` or `edges` calculation fails
 
 Check these points before changing any code:
 
