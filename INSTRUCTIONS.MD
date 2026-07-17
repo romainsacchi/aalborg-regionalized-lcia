@@ -3,24 +3,24 @@
 Please complete these steps before the course starts.
 The goal is to spend Day 1 learning, not debugging installations.
 
-If you get stuck, contact:
-`romain.sacchi@psi.ch`
+In case of issue, first refer to the [TROUBLESHOOTING.md](TROUBLESHOOTING.md) guide. 
 
-First use the symptom-based [TROUBLESHOOTING.md](TROUBLESHOOTING.md) guide. If the problem remains, include the diagnostic information listed there when you contact an instructor.
+If the problem remains, contact: `romain.sacchi@psi.ch`
+
 
 ## Minimum hardware
 
-- Minimum: `8 GB` RAM
-- Preferred: `16 GB` RAM
+- Minimum: `16 GB` RAM
+- Preferred: `24 GB` RAM
 
 ## Before you start
 
 - A stable internet connection is needed to install Git, Miniforge, and the Python packages in the preferred `bw` conda environment.
 - If your institution does not allow Anaconda, conda, or Miniforge, use the alternate Python 3.11 + venv/pip route below.
 - On Day 1, the notebooks also download a prepared Brightway project archive the first time it is installed into your local Brightway workspace.
-- No separate database download is required for the course BAFU workbook; `data/lci-bafu.xlsx` is already bundled in this repository.
+- No separate database download is required for the course BAFU workbook; `data/lci-bafu.xlsx` is already included in this repository.
 
-## What these tools are for
+## What these mentioned tools are for
 
 - `Git`: downloads and updates this course repository.
 - `Miniforge` / `conda`: installs Python packages in an isolated environment. This is the recommended route.
@@ -43,40 +43,46 @@ This will make the Day 1 Python and Jupyter refresher much easier to follow.
 
 ## 1) Install Git and Miniforge
 
-Preferred route:
-- Git: https://git-scm.com/downloads
-- Miniforge (official installers): https://github.com/conda-forge/miniforge/releases/latest
 
-Mac (with Homebrew) example for Git:
+### Git installation
+
+Note: if you already have `git` installed on your computer, you can skip this step.
+
+Mac users, in a terminal using `brew`:
 
 ```bash
 brew install git
 ```
 
+Windows users:
+
+Download and install from: https://git-scm.com/downloads
+
+
 ### Miniforge installation
 
-Mac users:
+Note: if you already have `conda`, `miniconda` or `mamba` or other `conda`-like 
+environment managers installed on your computer, you can skip this step. 
 
-- Open `Terminal`
-- Download and run the official installer for your Mac architecture:
+Mac users, in a terminal:
 
 ```bash
 curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-$(uname -m).sh"
 bash Miniforge3-MacOSX-$(uname -m).sh
 ```
 
-- Accept the prompt to initialize `conda` for your shell.
 
 Windows users:
 
-- Download `Miniforge3-Windows-x86_64.exe`
-- Run the installer and keep the Start Menu shortcuts enabled.
-- After installation, open the **Miniforge Prompt** from the Start Menu. This is the recommended shell for using `conda` on Windows.
-- If possible, install Miniforge in a path without spaces or special characters.
+- Download and install `Miniforge3-Windows-x86_64.exe`
+- After installation, open the **Miniforge Prompt** from the Start Menu. This is the recommended terminal for using `conda` on Windows.
+
 
 Check that both tools are available.
 On Mac, use `Terminal`.
-On Windows, use `Miniforge Prompt`:
+On Windows, use `Miniforge Prompt`.
+
+In that terminal, type:
 
 ```bash
 git --version
@@ -90,13 +96,12 @@ If `conda` is not found:
 
 ### Alternate route if you cannot use Anaconda, conda, or Miniforge
 
-Install Git and Python `3.11` instead:
-- Git: https://git-scm.com/downloads
+Install Python `3.11` instead:
 - Python: https://www.python.org/downloads/
 
 During Python installation on Windows, enable **Add python.exe to PATH** if your institution allows it.
 
-Check that both tools are available:
+Check that both tools are available in your terminal:
 
 ```bash
 git --version
@@ -125,7 +130,6 @@ Recommended shell:
 
 - Mac: `Terminal`
 - Windows with the preferred conda route: `Miniforge Prompt`
-- Windows with the alternate venv/pip route: `PowerShell`
 
 Example: go to `Documents` before cloning:
 
@@ -135,12 +139,10 @@ cd Documents
 
 ## 3) Clone this repository
 
-You have two options:
+At this point, you might want to create a folder containing your cloned projects. 
+Otherwise, they will be listed directly under "Documents".
 
-- Option A (GUI): GitHub Desktop https://desktop.github.com/download/
-- Option B (terminal): use `git clone`
-
-At this point, you might want to create a folder containing your cloned projects. Otherwise they will be listed directly under "Documents".
+In your terminal:
 
 ```bash
 mkdir GitHub
@@ -148,7 +150,7 @@ cd GitHub
 ```
 This creates a folder named "GitHub", and you enter it with cd. 
 
-Terminal example:
+Now, we clone the course repo and enter it:
 
 ```bash
 git clone https://github.com/romainsacchi/aalborg-regionalized-lcia.git
@@ -162,15 +164,13 @@ The repository URL above ends with `.git`, which is the standard clone URL shown
 
 ### Recommended route: Miniforge / conda
 
-Use this route unless Anaconda, conda, or Miniforge is blocked on your machine.
-
-From the repository root, go to `envs`:
+From the repository root (where you should be from the previous step), go to `envs`:
 
 ```bash
 cd envs
 ```
 
-Choose one command:
+Choose one command, depending on your machine:
 
 - Mac Apple Silicon (M1/M2/M3/M4):
 
@@ -268,7 +268,8 @@ On Apple Silicon, `bw2calc` may print a warning about missing `scikit-umfpack`.
 In a venv/pip setup, you may also see a warning about missing optional optimized solvers.
 These warnings usually mean calculations may use a slower fallback solver.
 
-If this happens in the conda environment on Apple Silicon, it usually means the `bw` environment drifted and `setuptools` became too new, which breaks the legacy `scikits.umfpack` import.
+If this happens in the conda environment on Apple Silicon, it usually means the `bw` environment drifted 
+and `setuptools` became too new, which breaks the legacy `scikits.umfpack` import.
 
 For conda users, run:
 
@@ -282,19 +283,6 @@ Then verify:
 ```bash
 python -c "import scikits.umfpack; print('UMFPACK import: OK')"
 ```
-
-If the environment is still inconsistent, recreate it from the YAML file.
-For venv/pip users, do not spend time manually compiling `scikit-umfpack` before the course unless your institution already provides the needed system libraries.
-
-If a failed `conda env update` leaves imports like `bw2calc` or
-`scikits.umfpack` broken, repair the packaging tools first:
-
-```bash
-conda activate bw
-conda install --force-reinstall "setuptools<81" "pip<26"
-```
-
-Then retry the environment update if needed.
 
 
 ## 6) We will use the BAFU:2025 database imported from an inventory file
@@ -311,12 +299,6 @@ The Brightway-compatible Excel file is already included in this repository:
 You do **not** need to download the database from the website above for this course.
 The link is provided as a reference and for the terms of use.
 
-The actual `brightway` import is done during Day 1 in:
-- `tutorials/DAY 1/D1-04 First LCA from demand to score in Brightway.ipynb`
-
-During Day 1, we will also show how an `ecoinvent` import workflow fits into a `brightway` setup for participants who use that database.
-However, `ecoinvent` is not included in this repository and will not be used during the three-day hands-on course because of licensing constraints.
-
 ## 7) Launch Jupyter Lab and run setup notebook
 
 From the *repository root* (you might still be in `envs/` after creating the conda environment, so go back up one level, using `cd ..`):
@@ -330,10 +312,10 @@ Then open and run all cells in:
 
 - `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`
 
-The final section runs a tiny LCA in an isolated Brightway project. It does not modify the BAFU course project. After the first successful run, change the requested electricity input from `2.0` to `3.0`, rerun the model cells, and confirm that the score changes from `1.0` to `1.5 kg CO2-eq`.
+The final section runs a tiny LCA in an isolated Brightway project. 
 
 Keep the same `bw` environment for the full course.
-Day 2 and Day 3 assume that the Brightway project created on Day 1 is still available.
+
 
 ## 8) Before the course starts
 
@@ -341,10 +323,8 @@ Please complete:
 - [READING_MATERIAL.md](READING_MATERIAL.md)
 - [tutorials/00_SETUP/00 - Setup and First Checks.ipynb](tutorials/00_SETUP/00%20-%20Setup%20and%20First%20Checks.ipynb)
 
-Your readiness check is complete when the notebook prints `READINESS CHECK: PASS` and you have successfully changed the model input and obtained the predicted new score.
+Your readiness check is complete when the notebook prints `READINESS CHECK: PASS`.
 
-Keep the same `bw` environment for the full course.
-Day 1 creates the Brightway project state used later in Day 2 and Day 3, so do not delete or recreate it unless an instructor asks you to.
 
 ## 9) Terms of use and citation requirements (BAFU:2025)
 
@@ -358,76 +338,7 @@ Requirements:
 - The Swiss Federal Administration cannot be held responsible for the published data.
 - It is recommended that specialists be consulted for the implementation of life cycle assessments and the analysis of the results.
 
-## 10) Updating the repository during the course
-
-The instructors may add or update files during the course.
-When this happens, you may be asked to run:
-
-```bash
-git pull
-```
-
-This usually works if you have not modified the same files.
-If you have worked in a notebook that was also updated by the instructors, Git may refuse to pull or may report a conflict.
-This is normal: Git is protecting your local work.
-
-Before pulling, check whether you have local changes:
-
-```bash
-git status --short
-```
-
-If the command prints nothing, your repository is clean and you can run:
-
-```bash
-git pull
-```
-
-If it lists modified notebooks or other files, preserve your work first.
-The safest course workflow is:
-
-1. Save and close the notebook in Jupyter.
-2. Copy your edited notebook outside this repository, for example to a folder named `aalborg-regionalized-lcia-my-work`.
-3. Let Git restore the original course notebook.
-4. Pull the instructor updates.
-5. Open both the updated course notebook and your saved copy if you need to transfer answers or notes.
-
-Example, replacing the path with the notebook shown by `git status`:
-
-```bash
-mkdir -p ../aalborg-regionalized-lcia-my-work
-cp "tutorials/DAY 2/D2-03 Introduction to edges workflow and API.ipynb" ../aalborg-regionalized-lcia-my-work/
-git restore "tutorials/DAY 2/D2-03 Introduction to edges workflow and API.ipynb"
-git pull
-```
-
-On Windows, if `cp` is not available in your terminal, use File Explorer to copy the notebook outside the repository before running `git restore`.
-Repeat the `cp` and `git restore` commands for each modified course notebook that blocks the pull.
-Only use `git restore` after you have made a backup copy.
-
-If you prefer to keep all local changes inside Git, you can also use a stash:
-
-```bash
-git stash push -m "my course work before update"
-git pull
-git stash pop
-```
-
-This preserves your changes, but `git stash pop` can still create notebook conflicts if the same notebook changed both locally and upstream.
-If that happens, ask an instructor before trying to edit the notebook file manually.
-Notebook files are JSON files, and manual conflict resolution is easy to get wrong.
-
-If you are already in the middle of a failed pull, stop and ask for help.
-In many cases the instructor can help you return to the pre-pull state with one of:
-
-```bash
-git merge --abort
-git rebase --abort
-```
-
-Do not run `git reset --hard` or discard changes in GitHub Desktop unless you are certain your notebook work has been backed up elsewhere.
-
-## 11) If something fails or if you are stuck, email this information
+## 10) If something fails or if you are stuck, email this information
 
 Send to `romain.sacchi@psi.ch`:
 
