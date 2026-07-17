@@ -2,15 +2,15 @@
   "name": "External-function climate method for D3-02",
   "unit": "kg CO2-eq",
   "version": "1.0",
-  "description": "External-function GWP100 characterization factors for carbon dioxide, methane, and dinitrogen monoxide. Methane and N2O are reevaluated by the notebook-level gwp_concentration_dependent function, while carbon dioxide stays fixed at 1. The startswith operator captures fossil and non-fossil name variants.",
+  "description": "External-function teaching GWP100 characterization factors for fossil carbon dioxide, fossil and biogenic methane, and dinitrogen monoxide. Methane and N2O are reevaluated by the notebook-level gwp_concentration_dependent function, while fossil carbon dioxide stays fixed at 1. Exact flow names avoid accidental matches.",
   "strategies": [
     "map_exchanges"
   ],
   "exchanges": [
     {
       "supplier": {
-        "name": "Carbon dioxide",
-        "operator": "startswith",
+        "name": "Carbon dioxide, fossil",
+        "operator": "equals",
         "matrix": "biosphere"
       },
       "consumer": {
@@ -20,8 +20,30 @@
     },
     {
       "supplier": {
-        "name": "Methane",
-        "operator": "startswith",
+        "name": "Methane, fossil",
+        "operator": "equals",
+        "matrix": "biosphere"
+      },
+      "consumer": {
+        "matrix": "technosphere"
+      },
+      "value": "gwp_concentration_dependent('CH4', horizon_years, ch4_concentration_ppb)"
+    },
+    {
+      "supplier": {
+        "name": "Methane, non-fossil",
+        "operator": "equals",
+        "matrix": "biosphere"
+      },
+      "consumer": {
+        "matrix": "technosphere"
+      },
+      "value": "gwp_concentration_dependent('CH4', horizon_years, ch4_concentration_ppb)"
+    },
+    {
+      "supplier": {
+        "name": "Methane, from soil or biomass stock",
+        "operator": "equals",
         "matrix": "biosphere"
       },
       "consumer": {
@@ -32,7 +54,7 @@
     {
       "supplier": {
         "name": "Dinitrogen monoxide",
-        "operator": "startswith",
+        "operator": "equals",
         "matrix": "biosphere"
       },
       "consumer": {

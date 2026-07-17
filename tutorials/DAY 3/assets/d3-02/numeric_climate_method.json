@@ -2,15 +2,15 @@
   "name": "Numeric climate method for D3-02",
   "unit": "kg CO2-eq",
   "version": "1.0",
-  "description": "Fixed GWP100 characterization factors for carbon dioxide, methane, and dinitrogen monoxide. The startswith operator captures fossil and non-fossil name variants.",
+  "description": "Fixed teaching GWP100 characterization factors for fossil carbon dioxide, fossil and biogenic methane, and dinitrogen monoxide. Exact flow names avoid matching atmospheric carbon dioxide uptake or other substances whose names begin with Methane.",
   "strategies": [
     "map_exchanges"
   ],
   "exchanges": [
     {
       "supplier": {
-        "name": "Carbon dioxide",
-        "operator": "startswith",
+        "name": "Carbon dioxide, fossil",
+        "operator": "equals",
         "matrix": "biosphere"
       },
       "consumer": {
@@ -20,8 +20,30 @@
     },
     {
       "supplier": {
-        "name": "Methane",
-        "operator": "startswith",
+        "name": "Methane, fossil",
+        "operator": "equals",
+        "matrix": "biosphere"
+      },
+      "consumer": {
+        "matrix": "technosphere"
+      },
+      "value": 31.028232511015727
+    },
+    {
+      "supplier": {
+        "name": "Methane, non-fossil",
+        "operator": "equals",
+        "matrix": "biosphere"
+      },
+      "consumer": {
+        "matrix": "technosphere"
+      },
+      "value": 31.028232511015727
+    },
+    {
+      "supplier": {
+        "name": "Methane, from soil or biomass stock",
+        "operator": "equals",
         "matrix": "biosphere"
       },
       "consumer": {
@@ -32,7 +54,7 @@
     {
       "supplier": {
         "name": "Dinitrogen monoxide",
-        "operator": "startswith",
+        "operator": "equals",
         "matrix": "biosphere"
       },
       "consumer": {
