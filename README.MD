@@ -25,9 +25,9 @@ All material remains available after the course.
 ## Quick Links
 
 - [INSTRUCTIONS.MD](INSTRUCTIONS.MD): pre-arrival setup and installation steps
-- [TROUBLESHOOTING.md](TROUBLESHOOTING.md): symptom-based help for setup, kernels, files, and calculations
-- [SCHEDULE.MD](SCHEDULE.MD): day-by-day agenda with notebook mapping
-- [READING_MATERIAL.md](READING_MATERIAL.md): recommended pre-course reading
+- [TROUBLESHOOTING.md](TROUBLESHOOTING.md): help for setup, kernels, files, and calculations
+- [SCHEDULE.MD](SCHEDULE.MD): day-by-day agenda with corresponding notebooks
+- [READING_MATERIAL.md](READING_MATERIAL.md): recommended reading prior to the course
 - [HOME_ASSIGNMENT.md](HOME_ASSIGNMENT.md): optional post-course assignment
 
 ## Learning Outcomes
@@ -36,10 +36,10 @@ By the end of the course, participants will be able to:
 - Explain `brightway`'s architecture and matrix-based LCA computation flow.
 - Build and run LCA models in Python.
 - Perform uncertainty analysis and contribution analysis.
-- Import and analyze a national LCA inventory database from Excel, and understand how a similar import workflow applies to `ecoinvent`.
+- Import and analyze an LCA inventory database from Excel, and understand how a similar import workflow applies to `ecoinvent`.
 - Run regionalised LCIA workflows with `edges`.
 - Implement scenario-based LCIA with parameterised characterization factors.
-- Perform inventory flow assessment and interpret supply-chain criticality signals.
+- Perform inventory flow assessment and interpret supply-chain criticality scores.
 
 ## Target Audience
 
@@ -108,26 +108,17 @@ Participants should work through the repository in this order:
 
 Before the course starts:
 1. Follow [INSTRUCTIONS.MD](INSTRUCTIONS.MD).
-2. Create and activate the `bw` environment. Use the Miniforge/conda route by default; use the venv/pip route only if your institution does not allow Anaconda, conda, or Miniforge.
-3. Run `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`, complete its mini LCA, and change the requested model input.
+2. Create and activate the `bw` environment. 
+3. Run `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`.
 
 During the course:
 4. Complete Day 1, then Day 2, then Day 3 in the order shown in [SCHEDULE.MD](SCHEDULE.MD).
-5. Keep using the same `bw` environment and the same Brightway project created on Day 1, because later notebooks build on that state.
+5. Keep using the same `bw` environment and the same Brightway project created on Day 1 throughout the course.
 
 ## Before the Course
 
 Follow [INSTRUCTIONS.MD](INSTRUCTIONS.MD) and complete:
 - `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`
-
-You are ready when the setup notebook prints `READINESS CHECK: PASS` and your edited electricity input changes the calculated score as predicted. If a check fails, use [TROUBLESHOOTING.md](TROUBLESHOOTING.md) before the course.
-
-If you are new to Python, spend a few hours on a beginner tutorial before arrival.
-We recommend the University of Helsinki online tutorial, which requires no installation:
-- https://programming-25.mooc.fi/part-1/1-getting-started
-
-For our purposes, the `Introduction to Programming` section is sufficient.
-You do not need the `Advanced Course in Programming` section.
 
 No database download is required before arrival; the BAFU workbook is already included under `data/`.
 Internet access is still needed for software installation, package downloads, and the first download of the prepared Brightway project archive used in Day 1.
@@ -155,8 +146,8 @@ See [INSTRUCTIONS.MD](INSTRUCTIONS.MD) for the exact commands.
   - [Karin Treyer](mailto:karin.treyer@psi.ch), Paul Scherrer Institute (PSI)
 - Location: Aalborg, Denmark
 - Dates: Wednesday 16 to Friday 18 September 2026
-- Daily schedule: 09:00 start; planned finish at 18:15 on Days 1-2 and 18:00 on Day 3
-- Format: lectures + hands-on workshops (24 hours)
+- Daily schedule: 09:00 start; planned finish at 18:00 each day
+- Format: lectures + hands-on exercises
 
 ## License
 
