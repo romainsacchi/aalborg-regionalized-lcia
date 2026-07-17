@@ -51,6 +51,7 @@ dependencies:
   - pip<26
   - setuptools<81
   - pip:
+      - clipspy
       - git+https://github.com/Laboratory-for-Energy-Systems-Analysis/trails.git
       - multifunctional
       - bw_simapro_csv
