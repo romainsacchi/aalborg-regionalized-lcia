@@ -1,13 +1,14 @@
 {
-  "name": "Some fictitious example of water scarcity with uncertainty",
-  "unit": "m3 deprived-eq.",
+  "name": "Some fictitious example of water withdrawal with uncertainty",
+  "unit": "m3 withdrawal-eq.",
   "version": "1.0",
   "exchanges": [
     {
       "supplier": {
         "name": "Water",
         "categories": [
-          "air"
+          "natural resource",
+          "in water"
         ],
         "operator": "contains",
         "matrix": "biosphere"
