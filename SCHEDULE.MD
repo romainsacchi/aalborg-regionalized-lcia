@@ -156,6 +156,7 @@ Coffee break
 Scenario-based LCIA with parameterised CFs
 - [D3-02 Parameterised characterization factors with edges](tutorials/DAY%203/D3-02%20Parameterised%20characterization%20factors%20with%20edges.ipynb)
 - [D3-03 Time and scenario integration workflow](tutorials/DAY%203/D3-03%20Time%20and%20scenario%20integration%20workflow.ipynb)
+- [Optional extension: D3-03b Prospective AWARE 2.0](tutorials/DAY%203/D3-03b%20Optional%20-%20Prospective%20AWARE%202.0.ipynb)
 
 ### 12:15 - 12:30
 Inventory flow assessment I
