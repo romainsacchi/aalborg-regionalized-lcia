@@ -4,3 +4,5 @@ AGENTS.md
 .ipynb_checkpoints/
 __pycache__/
 .venv-bw/
+brightway2-project-*.tar.gz
+
