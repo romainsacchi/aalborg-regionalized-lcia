@@ -41,6 +41,20 @@ You do not need to complete the `Advanced Course in Programming` section.
 
 This will make the Day 1 Python and Jupyter refresher much easier to follow.
 
+## Steps to complete
+
+*Clone the course github repository*
+Steps 1) to 3) clone the github repository, i.e. download all files from the repo to your local computer. Thanks to git, you will be able to update the files in case they have been changed. 
+
+
+*Create the course conda environment*
+Step 4) creates a conda environment named "bw", using a .yaml file which contains instructor-defined information on the packages and their versions we want to use in the course.
+Step 5) lets you test the environment.  
+
+*Miscellaneous*
+Please read and follow steps 6) to 9). 
+
+
 ## 1) Install Git and Miniforge
 
 
