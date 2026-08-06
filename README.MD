@@ -2,9 +2,9 @@
 
 **Aalborg, Denmark | 16-18 September 2026**
 
-![Aerial view of Aalborg and the Limfjord](_images/aalborg-aerial.jpg)
+![Aalborg viewed from the Aalborg Tower](https://upload.wikimedia.org/wikipedia/commons/c/c1/Aalborg_from_the_Aalborg_tower.jpg)
 
-*Photo by [Drlady](https://commons.wikimedia.org/wiki/File:Aalborg_from_above.jpg), via Wikimedia Commons, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
+*Photo by [ClausFalk](https://commons.wikimedia.org/wiki/File:Aalborg_from_the_Aalborg_tower.jpg), via Wikimedia Commons, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
 
 ## Course Overview
 
@@ -91,10 +91,10 @@ Requirements:
 ## Repository Structure
 
 - `data/`: bundled course data, including the BAFU Excel inventory used on Day 1
-- [tutorials/00_SETUP/](tutorials/00_SETUP/README.MD): pre-course setup and first checks
-- [tutorials/DAY 1/](tutorials/DAY%201/README.MD): `brightway` foundations + BAFU import + optional advanced Brightway extensions
-- [tutorials/DAY 2/](tutorials/DAY%202/README.MD): regionalised LCIA with `edges`
-- [tutorials/DAY 3/](tutorials/DAY%203/README.MD): scenario LCIA and inventory flow assessment
+- [tutorials/00_SETUP/](tutorials/00_SETUP/): pre-course setup and first checks
+- [tutorials/DAY 1/](tutorials/DAY%201/): `brightway` foundations + BAFU import + optional advanced Brightway extensions
+- [tutorials/DAY 2/](tutorials/DAY%202/): regionalised LCIA with `edges`
+- [tutorials/DAY 3/](tutorials/DAY%203/): scenario LCIA and inventory flow assessment
 - [READING_MATERIAL.md](READING_MATERIAL.md): suggested background reading
 - [HOME_ASSIGNMENT.md](HOME_ASSIGNMENT.md): optional post-course assignment
 
@@ -132,7 +132,8 @@ Core environment files are in `envs/`.
 
 Preferred Miniforge/conda files:
 - `bw_env_osxARM.yaml` for macOS Apple Silicon
-- `bw_env_win64.yaml` for Windows or Mac Intel
+- `bw_env_osx64.yaml` for macOS Intel
+- `bw_env_win64.yaml` for Windows
 
 Fallback venv/pip file for participants who cannot use Anaconda, conda, or Miniforge:
 - `requirements_venv.txt` for a pip-installable fallback matching the `bw` environment as closely as possible
@@ -146,7 +147,7 @@ See [INSTRUCTIONS.MD](INSTRUCTIONS.MD) for the exact commands.
   - [Karin Treyer](mailto:karin.treyer@psi.ch), Paul Scherrer Institute (PSI)
 - Location: Aalborg, Denmark
 - Dates: Wednesday 16 to Friday 18 September 2026
-- Daily schedule: 09:00 start; planned finish at 18:00 each day
+- Daily schedule: 09:00 start; planned finish at 18:15 on Days 1 and 2, and 18:00 on Day 3
 - Format: lectures + hands-on exercises
 
 ## License

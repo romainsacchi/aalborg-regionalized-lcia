@@ -5,4 +5,6 @@ AGENTS.md
 __pycache__/
 .venv-bw/
 brightway2-project-*.tar.gz
-
+tutorials/DAY 1/*sankey.html
+tutorials/DAY 1/*treemap.html
+tutorials/DAY 3/D3-05_*_geopolrisk_sankey.html
