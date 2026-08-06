@@ -352,7 +352,34 @@ Requirements:
 - The Swiss Federal Administration cannot be held responsible for the published data.
 - It is recommended that specialists be consulted for the implementation of life cycle assessments and the analysis of the results.
 
-## 10) If something fails or if you are stuck, email this information
+## 10) Updating the repository during the course
+
+The instructors may add or update course files during the course. Because the
+notebooks and their outputs can be reproduced, the recommended update workflow
+replaces your local course files with the latest version from `origin/main`.
+
+Save and close all notebooks, then run these commands from the repository root:
+
+```bash
+git fetch origin
+git reset --hard origin/main
+git clean -fd
+```
+
+This deliberately discards changes to tracked files, including notebook answers
+and stored cell outputs. It also removes untracked, non-ignored files and folders
+inside the repository. The course environment and Brightway projects are not
+affected.
+
+After updating, `git status --short` should print nothing:
+
+```bash
+git status --short
+```
+
+You can then reopen the notebooks and rerun their cells from the beginning.
+
+## 11) If something fails or if you are stuck, email this information
 
 Send to `romain.sacchi@psi.ch`:
 

@@ -160,7 +160,7 @@ The external PM2.5 example in `D3-02` requires internet access and a responsive 
 
 ## `git pull` reports local changes or conflicts
 
-Your notebook work is local and should be preserved before updating. Follow the backup workflow in [INSTRUCTIONS.MD](INSTRUCTIONS.MD#10-updating-the-repository-during-the-course). Do not use `git reset --hard`, and do not discard a notebook through GitHub Desktop unless a separate copy of your work exists.
+Do not try to merge conflicting notebook files. Close Jupyter and follow the full replacement workflow in [INSTRUCTIONS.MD](INSTRUCTIONS.MD#10-updating-the-repository-during-the-course). This deliberately discards local notebook progress and makes the course files match the latest version from `origin/main`.
 
 ## What to send the instructors
 
