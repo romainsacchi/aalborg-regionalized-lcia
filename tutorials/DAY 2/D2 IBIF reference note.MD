@@ -1,6 +1,6 @@
-# D4-03 IBIF Reference Note
+# D2-05 IBIF Reference Note
 
-This note supports `D4-03 AWARE and biodiversity with regionalised methods.ipynb`. It explains what the **Intactness-based Biodiversity Impact Factors (IBIF)** dataset is, how the factors are built from the GLOBIO model, what the units mean, and how to interpret the country-level biodiversity factors used in regionalized LCIA.
+This note supports `D2-05 Regionalised methods across impact categories.ipynb`. It explains what the **Intactness-based Biodiversity Impact Factors (IBIF)** dataset is, how the factors are built from the GLOBIO model, what the units mean, and how to interpret the country-level biodiversity factors used in regionalised LCIA.
 
 ## What IBIF Measures
 
@@ -28,10 +28,6 @@ The `overall` factors are calculated as the arithmetic mean of the plant and ver
 ## From GLOBIO to IBIF
 
 IBIF starts from **GLOBIO 4**, a global terrestrial biodiversity model that estimates local MSA losses from a set of direct drivers. In the IBIF workflow, those direct-driver losses are then attributed back to the pressures that appear in inventories.
-
-![IBIF workflow from GLOBIO direct-driver losses to pressure-specific biodiversity impact factors](assets/d4-03/ibif/figure_1_workflow.png)
-
-*Extracted from the source PDF: IBIF workflow linking GLOBIO direct-driver losses to the final biodiversity impact factors.*
 
 The logic is:
 
@@ -178,17 +174,11 @@ Some IBIF values are nearly constant across countries, while others vary strongl
 - `NH3` and `NOx` vary strongly because deposition, natural-area shares, and atmospheric transport differ across countries.
 - `Fragmentation` and `disturbance` vary strongly because they depend on how infrastructure or land use is embedded within surrounding natural habitat.
 
-The figure below shows the country-level factors for **warm-blooded vertebrates**, including habitat loss, disturbance, and fragmentation from land use and roads.
+Country-level maps are useful for intuition. High factors do **not** simply mean that a country has high absolute biodiversity loss overall. They mean that **one unit of the pressure** generated in that country is associated with a relatively large attributed loss in local terrestrial intactness.
 
-![Country-level IBIF maps for warm-blooded vertebrates](assets/d4-03/ibif/figure_3_vertebrate_bifs.jpg)
+## How to Read `IBIF biodiversity (land use)` in D2-05
 
-*Extracted from the source PDF: country-level IBIF values for warm-blooded vertebrates across land-use and road-related pressures.*
-
-These maps are useful for intuition. High factors do **not** simply mean that a country has high absolute biodiversity loss overall. They mean that **one unit of the pressure** generated in that country is associated with a relatively large attributed loss in local terrestrial intactness.
-
-## How to Read `IBIF biodiversity (land use)` in Day 4
-
-The Day 4 notebook uses the **land-use branch** of IBIF. In practice, that means:
+The D2-05 notebook uses the **land-use branch** of IBIF. In practice, that means:
 
 - the characterized result responds to **where land occupation or land transformation occurs**
 - the country of the consuming activity matters because the method is **country-level**
@@ -196,7 +186,7 @@ The Day 4 notebook uses the **land-use branch** of IBIF. In practice, that means
 
 This is why IBIF behaves differently from AWARE. AWARE follows water-related exchanges and local water scarcity. IBIF land use follows land occupation and transformation pressures and translates them into country-specific biodiversity-intactness losses.
 
-For the Day 4 notebook, the most important interpretation points are:
+For D2-05, the most important interpretation points are:
 
 1. `IBIF biodiversity (land use)` is a **country-level terrestrial biodiversity method**, not a species-extinction method.
 2. The response variable is **MSA loss**, so the method tracks declines in local ecological intactness rather than disappeared fraction of species.
@@ -219,4 +209,4 @@ Uncertainty is also present but not yet propagated into probabilistic BIF estima
 
 IBIF is a country-level biodiversity footprint dataset built from **GLOBIO-derived MSA losses** that are attributed to inventory-facing pressures. It translates climate emissions, nitrogen emissions, land use, and roads into **terrestrial biodiversity intactness loss factors** for plants, warm-blooded vertebrates, and their overall average.
 
-For Day 4 work, the main idea is simple: `IBIF biodiversity (land use)` makes land-related exchanges **geographically meaningful**. The same quantity of land occupation or transformation does not carry the same biodiversity-intactness consequence everywhere, which is why regionalized LCIA can expose upstream biodiversity hotspots that do not appear in a non-regionalized inventory.
+For D2-05, the main idea is simple: `IBIF biodiversity (land use)` makes land-related exchanges **geographically meaningful**. The same quantity of land occupation or transformation does not carry the same biodiversity-intactness consequence everywhere, which is why regionalised LCIA can expose upstream biodiversity hotspots that do not appear in a non-regionalised inventory.
