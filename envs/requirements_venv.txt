@@ -6,12 +6,12 @@ pip<26
 setuptools<81
 wheel
 
-bw2calc>=2.0.1
-bw2data>=4.3
-bw2io>=0.9.4
-bw2analyzer
-bw2parameters
-bw_processing
+bw2calc>=2.5.0
+bw2data>=4.7
+bw2io>=0.9.17
+bw2analyzer>=0.11.8
+bw2parameters>=1.1.0
+bw_processing>=1.6
 stats_arrays
 
 numpy>=1.24.4,<2.0.0
@@ -46,15 +46,12 @@ tqdm
 fair
 pyvis
 
-premise
-edges
+edges==1.4.0
 pypardiso; platform_system == "Windows"
-multifunctional
-bw_simapro_csv
-polyviz
-
-git+https://github.com/Laboratory-for-Energy-Systems-Analysis/trails.git
-git+https://github.com/romainsacchi/d3blocks.git
+multifunctional==1.1.1
+bw_simapro_csv==0.4.3
+d3blocks==1.2.8
+polyviz==1.0.4
 
 PySide6==6.9.3
 PySide6-Addons==6.9.3

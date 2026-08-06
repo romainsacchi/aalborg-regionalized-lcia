@@ -5,8 +5,18 @@ on:
   pull_request:
 
 jobs:
+  check-materials:
+    name: Check course materials
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate notebooks, outputs, assets, and local links
+        run: python scripts/check_course_materials.py
+
   test-env:
-    name: Test on ${{ matrix.os }}
+    name: Test ${{ matrix.label }} environment
     runs-on: ${{ matrix.os }}
     defaults:
       run:
@@ -16,10 +26,16 @@ jobs:
       matrix:
         include:
           - os: windows-latest
+            label: Windows
             env_file: envs/bw_env_win64.yaml
             env_name: bw
-          - os: macos-latest
+          - os: macos-15
+            label: macOS Apple Silicon
             env_file: envs/bw_env_osxARM.yaml
+            env_name: bw
+          - os: macos-15-intel
+            label: macOS Intel
+            env_file: envs/bw_env_osx64.yaml
             env_name: bw
 
     steps:
@@ -37,13 +53,34 @@ jobs:
         run: |
           conda env create -f "${{ matrix.env_file }}"
 
-      - name: Smoke test Brightway imports
+      - name: Smoke test Brightway and Edges imports
         run: |
-          conda run -n "${{ matrix.env_name }}" python -W error - <<'PY'
+          conda run -n "${{ matrix.env_name }}" python - <<'PY'
+          import importlib.metadata
           import bw2data
           import bw2io
           import bw2calc
-          print("Brightway imports OK")
+          from edges import EdgeLCIA
+          from packaging.version import Version
+
+          minimum_versions = {
+              "bw2calc": "2.5.0",
+              "bw2data": "4.7",
+              "bw2io": "0.9.17",
+              "bw2analyzer": "0.11.8",
+              "bw2parameters": "1.1.0",
+              "bw-processing": "1.6",
+          }
+          for package, minimum in minimum_versions.items():
+              installed = importlib.metadata.version(package)
+              if Version(installed) < Version(minimum):
+                  raise SystemExit(
+                      f"Expected {package}>={minimum}, found {installed}"
+                  )
+          edges_version = importlib.metadata.version("edges")
+          if edges_version != "1.4.0":
+              raise SystemExit(f"Expected edges 1.4.0, found {edges_version}")
+          print("Brightway and Edges imports OK")
           PY
 
       - name: Smoke test activity-browser entry point

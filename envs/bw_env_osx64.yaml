@@ -1,4 +1,4 @@
-# From this directory, run: conda env create -f bw_env_win64.yaml
+# From this directory, run: conda env create -f bw_env_osx64.yaml
 
 name: bw
 channels:
@@ -9,7 +9,7 @@ channels:
 dependencies:
   - python=3.11
   - stats_arrays
-  - numpy=<2.0.0
+  - numpy=1.24.4
   - pandas<3.0.0
   - scipy<1.14.0
   - sparse>=0.14.0,<0.18
@@ -37,12 +37,10 @@ dependencies:
   - tqdm
   - fair
   - pyvis
-  - pypardiso
-  - conda-forge::pyside6=6.9.3
+  - scikit-umfpack
   - pip<26
   - setuptools<81
   - pip:
-      - clipspy
       - bw2calc>=2.5.0
       - bw2data>=4.7
       - bw2io>=0.9.17
@@ -54,6 +52,8 @@ dependencies:
       - bw_simapro_csv==0.4.3
       - d3blocks==1.2.8
       - polyviz==1.0.4
+      - PySide6==6.9.3
+      - PySide6-Addons==6.9.3
       - activity-browser
 variables:
   PYTHONNOUSERSITE: "1"

@@ -192,7 +192,13 @@ Choose one command, depending on your machine:
 conda env create -f bw_env_osxARM.yaml
 ```
 
-- Windows or Mac Intel:
+- Mac Intel:
+
+```bash
+conda env create -f bw_env_osx64.yaml
+```
+
+- Windows:
 
 ```bash
 conda env create -f bw_env_win64.yaml

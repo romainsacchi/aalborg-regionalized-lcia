@@ -1,4 +1,4 @@
-# in your terminal, run: conda env create -f lca_course_osxARM.yaml
+# From this directory, run: conda env create -f bw_env_osxARM.yaml
 
 name: bw
 channels:
@@ -8,12 +8,6 @@ channels:
   - romainsacchi
 dependencies:
   - python=3.11
-  - bw2calc>=2.0.1
-  - bw2data>=4.3
-  - bw2io>=0.9.4
-  - bw2analyzer
-  - bw2parameters
-  - bw_processing
   - stats_arrays
   - numpy=1.24.4
   - pandas<3.0.0
@@ -44,16 +38,20 @@ dependencies:
   - fair
   - pyvis
   - scikit-umfpack
-  - premise
-  - edges
   - pip<26
   - setuptools<81
   - pip:
-      - git+https://github.com/Laboratory-for-Energy-Systems-Analysis/trails.git
-      - multifunctional
-      - bw_simapro_csv
-      - git+https://github.com/romainsacchi/d3blocks.git
-      - polyviz
+      - bw2calc>=2.5.0
+      - bw2data>=4.7
+      - bw2io>=0.9.17
+      - bw2analyzer>=0.11.8
+      - bw2parameters>=1.1.0
+      - bw-processing>=1.6
+      - edges==1.4.0
+      - multifunctional==1.1.1
+      - bw_simapro_csv==0.4.3
+      - d3blocks==1.2.8
+      - polyviz==1.0.4
       - PySide6==6.9.3
       - PySide6-Addons==6.9.3
       - activity-browser
