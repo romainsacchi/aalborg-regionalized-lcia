@@ -71,7 +71,8 @@ Participants do **not** need to download the database before the course.
 On Day 1, participants will import the bundled BAFU file into `brightway`.
 
 We will also explain how to import the `ecoinvent` LCA database for participants who work with it.
-However, `ecoinvent` is **not** included in this repository and is **not** used in the course exercises because of licensing constraints.
+However, `ecoinvent` is **not** included in this repository. The core course exercises use BAFU;
+optional D1-13 requires an existing, licensed `ecoinvent-3.12-cutoff` project and database.
 
 Database page:
 - https://nexus.openlca.org/database/BAFU (reference and terms-of-use page)
@@ -101,6 +102,11 @@ Requirements:
 ## Day-by-Day Notebooks
 
 See the detailed agenda with notebook mapping in [SCHEDULE.MD](SCHEDULE.MD).
+
+Optional Day 1 examples answering participant questions:
+
+- [D1-13: contributions by CPC or ISIC classification](tutorials/DAY%201/D1-13%20Optional%20-%20Contribution%20analysis%20by%20activity%20classification.ipynb) (requires ecoinvent 3.12)
+- [D1-14: fast multiple LCAs](tutorials/DAY%201/D1-14%20Optional%20-%20Fast%20multiple%20LCAs.ipynb)
 
 ## Recommended Workflow
 

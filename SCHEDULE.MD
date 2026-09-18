@@ -87,12 +87,14 @@ Independent checkpoint: complete the notebook tasks before opening the solution 
 Pair comparison and instructor debrief
 
 ### Optional Day 1 extensions, if time allows
-Advanced `brightway` import, uncertainty, and parameter workflows
+Advanced `brightway` import, uncertainty, parameter, and contribution-analysis workflows
 - [D1-08 Optional - ecoinvent import and Brightway recap](tutorials/DAY%201/D1-08%20Optional%20-%20ecoinvent%20import%20and%20Brightway%20recap.ipynb)
 - [D1-09 Optional - Foreground and background uncertainty split](tutorials/DAY%201/D1-09%20Optional%20-%20Foreground%20and%20background%20uncertainty%20split.ipynb)
 - [D1-10 Optional - Database-level parameters and Monte Carlo](tutorials/DAY%201/D1-10%20Optional%20-%20Database-level%20parameters%20and%20Monte%20Carlo.ipynb)
 - [D1-11 Optional - Sea-floor transformation flows and custom LCIA method](tutorials/DAY%201/D1-11%20Optional%20-%20Additional%20biosphere%20database%20and%20custom%20LCIA%20method.ipynb)
 - [D1-12 Optional - Correlated water balances in Monte Carlo](tutorials/DAY%201/D1-12%20Optional%20-%20Correlated%20water%20balances%20in%20Monte%20Carlo.ipynb)
+- [D1-13 Optional - Contribution analysis by activity classification](tutorials/DAY%201/D1-13%20Optional%20-%20Contribution%20analysis%20by%20activity%20classification.ipynb) (requires an existing ecoinvent 3.12 project and database)
+- [D1-14 Optional - Fast multiple LCAs](tutorials/DAY%201/D1-14%20Optional%20-%20Fast%20multiple%20LCAs.ipynb)
 
 ## DAY 2 (Thursday, September 17, 2026) - Regionalised LCIA
 
